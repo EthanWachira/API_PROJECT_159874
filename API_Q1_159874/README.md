@@ -8,10 +8,16 @@ Follow these steps to set up the development environment for the Django project:
 python -m venv .venv
 # Activate the virtual environment:
 .\.venv\Scripts\Activate.ps1
+# Install Django using pip:
+pip install django
+# Create a project:
+django-admin startproject Ecommerceproject
+# Navigate to the project folder:
+• cd Ecommerceproject
 # Start the Develoment Server:
 python manage.py runserver
 
-Follow these steps to set up the run the Django project:
+Follow these steps to run the Django project:
 # Create Migrations for models.py:
 python manage.py makemigrations
 python manage.py migrate
