@@ -13,13 +13,13 @@ pip install django
 # Create a project:
 django-admin startproject Ecommerceproject
 # Navigate to the project folder:
-• cd Ecommerceproject
-# Start the Develoment Server:
-python manage.py runserver
-
-Follow these steps to run the Django project:
+cd Ecommerceproject
+# Create a superuser
+python manage.py createsuperuser
 # Create Migrations for models.py:
 python manage.py makemigrations
 python manage.py migrate
 # Run the Development Server:
 python manage.py runserver
+# Go to admin website:
+http://127.0.0.1:8000/admin/
