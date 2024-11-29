@@ -13,7 +13,7 @@ class Order(models.Model):
         related_name='orders'
     )
     order_date = models.DateTimeField(auto_now_add=True)
-    total_amount = models.DecimalField(max_digits=10, decimal_places=2)
+    total_amount = models.DecimalField(max_digits=100, decimal_places=0)
 
     def __str__(self):
         return f"Order {self.id} for {self.customer.name}"
